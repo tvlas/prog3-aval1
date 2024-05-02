@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #EFBC9B;
+    padding: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        
+}
+.navbar-brand img {
+    padding-left: 10px;
+    max-height: 56px;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.nav-link:hover {
+    
+    color: #FFF;
+    background-color: #B5C18E;
+    border-radius: 30px;
+    transition: border-radius 0.3s ease;
+}
+
+.nav-link {
+    margin-left: 10px;
+    border-radius: 30px;
+}
+
+/* Estilos para a galeria de produtos */
+#gallery {
+    padding: 60px 0;
+}
+
+#gallery h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    transition: transform 0.3s ease; /* Adiciona transição suave para a transformação */
+    margin-bottom: 16px;
+    
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta a escala do card em 5% ao passar o mouse por cima */
+}
+
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+footer h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+
+/* Botões */
+.btn-primary {
+    background-color: #1d1d1d;
+    border-color: transparent;
+}
+
+.btn-primary:hover {
+    background-color: #B5C18E;
+    border-color: #B5C18E;
+}
+
+
+@media (max-width: 769px) {
+    .navbar-nav {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 999; 
+    }
+
+    #menu-toggle:checked + .navbar-toggler .navbar-toggler-icon {
+        background-color: transparent; 
+    }
+
+    #menu-toggle:checked + .navbar-toggler .navbar-toggler-icon::before {
+        content: ''; 
+    }
+
+    #menu-toggle:checked + .navbar-toggler .navbar-toggler-icon::after {
+        content: ''; 
+    }
+
+    #menu-toggle:checked + .navbar-toggler + .menu .navbar-nav {
+        display: block; 
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+   .navbar-nav {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 10px;
+        padding-left: 10px;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 999; 
+    }
+
+
+    #menu-toggle:checked + .navbar-toggler .navbar-toggler-icon {
+        background-color: transparent; 
+    }
+
+    #menu-toggle:checked + .navbar-toggler .navbar-toggler-icon::before {
+        content: ''; 
+    }
+
+    #menu-toggle:checked + .navbar-toggler .navbar-toggler-icon::after {
+        content: ''; 
+    }
+
+    #menu-toggle:checked + .navbar-toggler + .menu .navbar-nav {
+        display: block; 
+    }
+}
+
+
+
+
+
